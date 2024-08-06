@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Concours ENSA 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .submit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: black;
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="quiz-form">
+        <div class="question">
+            <p>1 - Dans une salle d'examen où les places sont numérotées, 100 candidats passent un concours d'accès au ENSA. On dispose des feuilles de brouillon de trois couleurs différentes ordonnées ainsi : bleu, vert, jaune. Une feuille sur quatre, en commençant par la quatrième, contient le logo des ENSA. Les feuilles sont distribuées, en respectant l'ordre des numéros des places ainsi que celui des couleurs mentionnées ci-dessus. Le nombre de candidats ayant reçu une feuille de brouillon jaune contenant le logo est :</p>
+            <input type="radio" name="q1" value="A"> A) 8<br>
+            <input type="radio" name="q1" value="B"> B) 10<br>
+            <input type="radio" name="q1" value="C"> C) 12<br>
+            <input type="radio" name="q1" value="D"> D) 15<br>
+        </div>
+        <div class="question">
+            <p>2 - 1/5 √((101×102×103×104)+1)</p>
+            <input type="radio" name="q2" value="A"> A) 2101<br>
+            <input type="radio" name="q2" value="B"> B) 2102<br>
+            <input type="radio" name="q2" value="C"> C) 2103<br>
+            <input type="radio" name="q2" value="D"> D) 2104<br>
+        </div>
+        <div class="question">
+            <p>3 - (lim)┬(n→+∞)  ((-1)^n⋅n+1)/(n+√n)</p>
+            <input type="radio" name="q3" value="A"> A) 0<br>
+            <input type="radio" name="q3" value="B"> B) 1<br>
+            <input type="radio" name="q3" value="C"> C) -1<br>
+            <input type="radio" name="q3" value="D"> D) n'a pas de limite<br>
+        </div>
+        <div class="question">
+            <p>4 - (lim)┬(n→π/6)  (cos(2/3 x)-√3 sin(2x-π/3))/cos(2x)</p>
+            <input type="radio" name="q4" value="A"> A) 11/3<br>
+            <input type="radio" name="q4" value="B"> B) 10/6<br>
+            <input type="radio" name="q4" value="C"> C) 10/3<br>
+            <input type="radio" name="q4" value="D"> D) 11/6<br>
+        </div>
+        <div class="question">
+            <p>5 - Soit (u_n) une suite de réels éléments de ]0 , 1[ telle que ∀n∈N (1-u_n) u_(n+1)>1/4</p>
+            <input type="radio" name="q5" value="A"> A) u_n est croissante et converge vers 1/4<br>
+            <input type="radio" name="q5" value="B"> B) u_n est décroissante et converge vers 1/4<br>
+            <input type="radio" name="q5" value="C"> C) u_n est croissante et converge vers 1/2<br>
+            <input type="radio" name="q5" value="D"> D) u_n est divergente<br>
+        </div>
+        <div class="question">
+            <p>6 - Dans l'ensemble R, l'équation √(x+2√(x-1)) +√(x-2√(x-1)) = 1</p>
+            <input type="radio" name="q6" value="A"> A) admet une solution<br>
+            <input type="radio" name="q6" value="B"> B) admet deux solutions<br>
+            <input type="radio" name="q6" value="C"> C) admet trois solutions<br>
+            <input type="radio" name="q6" value="D"> D) n'admet pas de solution<br>
+        </div>
+        <div class="question">
+            <p>7 - Soit m∈R et (E_m) l'équation d'inconnue réelle x : (E_m): e^2x - 2m e^x + 1 = 0</p>
+            <input type="radio" name="q7" value="A"> A) si m∈] 1 , +∞ [ , (E_m) admet deux solutions de signe contraire<br>
+            <input type="radio" name="q7" value="B"> B) si m∈] -1 , 1 [ , (E_m) admet au moins une solution<br>
+            <input type="radio" name="q7" value="C"> C) si m∈] -∞ , -1 [ , (E_m) admet deux solutions négatives<br>
+            <input type="radio" name="q7" value="D"> D) si m∈] 1 , +∞ [ , (E_m) admet deux solutions positives<br>
+        </div>
+        <div class="question">
+            <p>8 - Soit une fonction f : [0, +∞[ → [0, +∞[ dérivable telle que f(0) = 0, on suppose que : ∀x≥0  f'(x)≤α⋅f(x)  (α > 0)</p>
+            <input type="radio" name="q8" value="A"> A) f est strictement croissante<br>
+            <input type="radio" name="q8" value="B"> B) f est strictement décroissante<br>
+            <input type="radio" name="q8" value="C"> C) f est une constante nulle<br>
+            <input type="radio" name="q8" value="D"> D) f est une constante non nulle<br>
+        </div>
+        <div class="question">
+            <p>9 - Soit la fonction f définie sur R par : f(x) = { e^(-1/x^2) si x > 0 ; 0 si x ≤ 0}, f' sa dérivée (lim)┬(x→0) f'(x)</p>
+            <input type="radio" name="q9" value="A"> A) 0<br>
+            <input type="radio" name="q9" value="B"> B) 1<br>
+            <input type="radio" name="q9" value="C"> C) e<br>
+            <input type="radio" name="q9" value="D"> D) +∞<br>
+        </div>
+        <div class="question">
+            <p>10 - ∫_1^2 (ln(1+x) - ln(x)) / x^2 dx</p>
+            <input type="radio" name="q10" value="A"> A) 5/2 ln2 + 1/2 ln3<br>
+            <input type="radio" name="q10" value="B"> B) 7/2 ln2 + 3/2 ln3<br>
+            <input type="radio" name="q10" value="C"> C) 7/2 ln2 - 3/2 ln3 - 1/2<br>
+            <input type="radio" name="q10" value="D"> D) 7/2 ln2<br>
+        </div>
+        <div class="question">
+            <p>11 - ∫_0^(π/2) sin(x) e^x dx</p>
+            <input type="radio" name="q11" value="A"> A) 1 + e^(π/2)<br>
+            <input type="radio" name="q11" value="B"> B) (1 + e^(π/2)) / 2<br>
+            <input type="radio" name="q11" value="C"> C) 5 - e^(π/2)<br>
+            <input type="radio" name="q11" value="D"> D) (5 - e^(π/2)) / 2<br>
+        </div>
+        <div class="question">
+            <p>12 - ∀n∈N^*, on pose : I_n = ∫_0^1 1 / (1 + t^n)^2 dt, alors (lim)┬(n→+∞) I_n (Il n'est pas nécessaire de calculer I_n)</p>
+            <input type="radio" name="q12" value="A"> A) 2<br>
+            <input type="radio" name="q12" value="B"> B) +∞<br>
+            <input type="radio" name="q12" value="C"> C) 1/4<br>
+            <input type="radio" name="q12" value="D"> D) 1<br>
+        </div>
+        <div class="question">
+            <p>13 - Le nombre de diviseurs du nombre 10! est égal à :</p>
+            <input type="radio" name="q13" value="A"> A) 20<br>
+            <input type="radio" name="q13" value="B"> B) 207<br>
+            <input type="radio" name="q13" value="C"> C) 270<br>
+            <input type="radio" name="q13" value="D"> D) 10<br>
+        </div>
+        <div class="question">
+            <p>14 - Le reste de la division euclidienne du nombre 2^123 + 3^121 par 11 est égal à :</p>
+            <input type="radio" name="q14" value="A"> A) 0<br>
+            <input type="radio" name="q14" value="B"> B) 1<br>
+            <input type="radio" name="q14" value="C"> C) 2<br>
+            <input type="radio" name="q14" value="D"> D) 3<br>
+        </div>
+        <div class="question">
+            <p>15 - Soit z_1 et z_2 les solutions de l'équation à variables complexes suivante : i z^2 + (2 - 3i)z + 5i - 5 = 0, |z_1|^2 + |z_2|^2 =</p>
+            <input type="radio" name="q15" value="A"> A) 10<br>
+            <input type="radio" name="q15" value="B"> B) 15<br>
+            <input type="radio" name="q15" value="C"> C) 20<br>
+            <input type="radio" name="q15" value="D"> D) 30<br>
+        </div>
+        <div class="question">
+            <p>16 - Soit le nombre complexe Z = 1/2 [ (1+i)^4 + (i-1)^4 ], argument (Z) ≡</p>
+            <input type="radio" name="q16" value="A"> A) 0 [2π]<br>
+            <input type="radio" name="q16" value="B"> B) π/4 [2π]<br>
+            <input type="radio" name="q16" value="C"> C) π/2 [2π]<br>
+            <input type="radio" name="q16" value="D"> D) π [2π]<br>
+        </div>
+        <div class="question">
+            <p>17 - Dans le plan rapporté au repère orthonormé direct (O, i, j), on considère les points A(2,6), B(3,1) et C(4,7). La distance du point A à la droite (BC) est égale à :</p>
+            <input type="radio" name="q17" value="A"> A) 35/√37<br>
+            <input type="radio" name="q17" value="B"> B) 6/√37<br>
+            <input type="radio" name="q17" value="C"> C) 11/√37<br>
+            <input type="radio" name="q17" value="D"> D) 1/√37<br>
+        </div>
+        <div class="question">
+            <p>18 - Dans l'espace muni d'un repère orthonormé direct (O, i, j, k), on considère les points A(1, -1, 2), B(3, 5, 4) et la sphère S telle que : A, B ∈ S et le segment [AB] passe par le centre de S. L'équation du plan tangent à S au point C(1, 5, 4) est :</p>
+            <input type="radio" name="q18" value="A"> A) 2x - 3y + 3z + 1 = 0<br>
+            <input type="radio" name="q18" value="B"> B) x - 3y + 2z + 6 = 0<br>
+            <input type="radio" name="q18" value="C"> C) -x + 3y + z - 18 = 0<br>
+            <input type="radio" name="q18" value="D"> D) -3x + 2y + 2z - 15 = 0<br>
+        </div>
+        <div class="question">
+            <p>19 - Une start-up de jeunes ingénieurs fabrique des capteurs de température dans deux sites différents. En une journée, le site 1 fabrique 2 fois plus de capteurs que le site 2. Le pourcentage de capteurs défectueux est de 3% pour le site 1 et 4% pour le site 2. On prélève un capteur au hasard dans l'ensemble de la production d'une journée. La probabilité que ce capteur provienne du site 1 et soit défectueux est :</p>
+            <input type="radio" name="q19" value="A"> A) 0,01<br>
+            <input type="radio" name="q19" value="B"> B) 0,02<br>
+            <input type="radio" name="q19" value="C"> C) 0,03<br>
+            <input type="radio" name="q19" value="D"> D) 0,04<br>
+        </div>
+        <div class="question">
+            <p>20 - La probabilité que ce capteur provienne du site 1 sachant qu'il est défectueux est :</p>
+            <input type="radio" name="q20" value="A"> A) 0,2<br>
+            <input type="radio" name="q20" value="B"> B) 0,4<br>
+            <input type="radio" name="q20" value="C"> C) 0,6<br>
+            <input type="radio" name="q20" value="D"> D) 0,8<br>
+        </div>
+        <button type="button" class="submit-button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <script>
+        function submitQuiz() {
+            var form = document.getElementById('quiz-form');
+            var correctAnswers = {
+                q1: 'A', q2: 'A', q3: 'D', q4: 'B', q5: 'C', q6: 'D',
+                q7: 'A', q8: 'C', q9: 'A', q10: 'C', q11: 'B', q12: 'D',
+                q13: 'C', q14: 'A', q15: 'B', q16: 'D', q17: 'C', q18: 'C',
+                q19: 'B', q20: 'C'
+            };
+            var score = 0;
+            var totalQuestions = 20;
+
+            for (var i = 1; i <= totalQuestions; i++) {
+                var selectedAnswer = form.querySelector('input[name="q' + i + '"]:checked');
+                if (selectedAnswer && selectedAnswer.value === correctAnswers['q' + i]) {
+                    score += 2;
+                } else if (selectedAnswer) {
+                    score -= 1;
+                }
+            }
+
+            var resultPage = `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Quiz Result</title>
+                    <style>
+                        body {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                            font-family: Arial, sans-serif;
+                            background-color: white;
+                            color: black;
+                        }
+                        .result {
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 24px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="result">YOU GOT ${score}/40 CORRECT!</div>
+                </body>
+                </html>
+            `;
+            
+            var newWindow = window.open("", "_blank");
+            newWindow.document.write(resultPage);
+            newWindow.document.close();
+        }
+    </script>
+</body>
+</html>
